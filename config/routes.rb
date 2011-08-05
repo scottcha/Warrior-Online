@@ -3,6 +3,8 @@ WarriorOnline::Application.routes.draw do
 
   get "pages/contact"
 
+  get "pages/about"
+  
   resources :payments
 
   resources :users

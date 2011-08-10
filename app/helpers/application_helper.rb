@@ -9,4 +9,8 @@ module ApplicationHelper
       "#{base_title} | #{@title}"
     end
   end
+  
+  def logo
+    base_logo = image_tag("http://dummyimage.com/255x50/000/fff.png&text=Warrior+Logo", :alt => "Warrior Online", :class => "round")
+  end
 end

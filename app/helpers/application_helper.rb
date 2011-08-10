@@ -2,7 +2,7 @@ module ApplicationHelper
 
   # Return a title on a per-page basis.
   def title
-    base_title = "Warrior Online"
+    base_title = appName
     if @title.nil?
       base_title
     else
@@ -11,6 +11,10 @@ module ApplicationHelper
   end
   
   def logo
-    base_logo = image_tag("http://dummyimage.com/255x50/000/fff.png&text=Warrior+Logo", :alt => "Warrior Online", :class => "round")
+    base_logo = image_tag("http://dummyimage.com/255x50/000/fff.png&text=Warrior+Logo", :alt => appName, :class => "round")
+  end
+  
+  def appName
+    base_appName = "Warrior Online"
   end
 end

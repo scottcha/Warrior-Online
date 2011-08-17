@@ -1,6 +1,6 @@
 class CreatePayments < ActiveRecord::Migration
   def self.up
-    alter_table :payments do |t|
+    create_table :payments do |t|
       t.float :amount
       t.integer :user_id
 
